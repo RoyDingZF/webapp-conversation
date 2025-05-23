@@ -16,6 +16,20 @@ NEXT_PUBLIC_APP_KEY=
 NEXT_PUBLIC_API_URL=
 ```
 
+Config more in `config/index.ts` file:   
+```js
+export const APP_INFO: AppInfo = {
+  title: 'Chat APP',
+  description: '',
+  copyright: '',
+  privacy_policy: '',
+  default_language: 'zh-Hans'
+}
+
+export const isShowPrompt = true
+export const promptTemplate = ''
+```
+
 ## 整体架构概述
 
 本项目主要包含以下三个组成部分：
@@ -308,19 +322,6 @@ NEXT_PUBLIC_API_URL=
     *   方便地集成第三方的 React UI 组件库，并根据需要调整其样式以符合整体设计。
     *   确保样式代码的可维护性和可扩展性。
 
-Config more in `config/index.ts` file:   
-```js
-export const APP_INFO: AppInfo = {
-  title: 'Chat APP',
-  description: '',
-  copyright: '',
-  privacy_policy: '',
-  default_language: 'zh-Hans'
-}
-
-export const isShowPrompt = true
-export const promptTemplate = ''
-```
 
 ## Getting Started
 First, install dependencies:
